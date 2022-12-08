@@ -55,6 +55,10 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+.topOfPage{
+  flex-direction: column;
+}
 .everything{
   flex-direction: row;
 }
@@ -63,8 +67,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
   margin: 20px;
   background: #2a8a33;
   flex-direction: column;
@@ -73,12 +75,18 @@ button {
   Border-radius: 10px;
 }
 
+.mines-left, .level, button#flag{
+  width: 90px;
+  height: 90px
+}
+
 button#flag {
   font-size: 25px;
 }
 
 .timer {
-  width: 200px;
+  width: 70%;
+  font-size: 30px;
 }
 
 .minesLeftBelow {
@@ -86,8 +94,12 @@ button#flag {
   text-align: center;
 }
 
-.minesLeftTop, .timer {
+.minesLeftTop {
   font-size: 20px;
+}
+
+.topOfPage2 {
+  display: flex;
 }
 
 .levelTop, .levelBottom {
@@ -95,10 +107,8 @@ button#flag {
 }
 
 .restart button {
-  transform: rotate(90deg);
   font-size: 30px;
-  height: 75px;
-  width: 75px;
+  width: 60%;
   margin: 20px;
   background: #2a8a33;
   Border-radius: 10px;
@@ -120,4 +130,10 @@ button#flag {
   align-content: center;
   margin: 20px 70px 0px 0px;
   color: #815e4c;
+}
+
+@media (min-width: 767px) {
+  .Main, button {
+    color: white;
+  }
 }
